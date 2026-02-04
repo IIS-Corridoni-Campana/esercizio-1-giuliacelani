@@ -8,9 +8,15 @@
     <body>
         <h1>IL GIORNO E LA NOTTE</h1>
             <p align="center">
-                <a herf="giorno.png">
-                    <button><img src="bottone giorno.png" height="250" width="500"></button>
-                </a>
+                
+                    <button onclick="mostraFoto()"></button><img src="bottone giorno.png" height="250" width="500"></button>
+                    <img id="giorno" src="giorno.png" style="display:none; width:1000;">
+                    <script>
+                    function mostraFoto() {
+                        document.getElementById("giorno").style.display = "block";
+                        }
+                    </script>
+
                 <a herf="notte.png">
                     <button><img src="bottone notte.png" height="250" width="500"></button>
                 </a>
